@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --nav-background-color:#C66E4E;
     --nav-text-color: white;
@@ -24,12 +30,29 @@ h1 {
     font-family: var(--nav-font-family);
 }
 
+aside {
+    position: relative;
+    width: 20rem;
+    text-align: center;
+    font-family: var(--nav-font-family);
+}
+
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px ;
+    color: grey;
+    position: relative;
+    top: -50px;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 70px;
 }
 
 aside img {
@@ -43,6 +66,8 @@ p {
 
 main {
     max-width: 840px;
+    position: relative;
+    /*color: var(--h1-color); deciding if I should have it blue or not*/
 }
 
 body {
@@ -50,16 +75,6 @@ body {
     font-family: var(--nav-font-family);
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: var(--nav-background-color);
-    color: var(--nav-text-color);
-    text-align: center;
-    font-family: var(--nav-font-family);
-}
 
 em {
     color: var(--h1-color);
@@ -70,4 +85,14 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
     font-family: var(--nav-font-family);
+}
+
+/* CSS class selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    background-color: #ed9879;
+    color: var(--nav-text-color);
 }
