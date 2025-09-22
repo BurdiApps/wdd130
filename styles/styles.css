@@ -1,16 +1,27 @@
+:root {
+    --nav-background-color:#C66E4E;
+    --nav-text-color: white;
+    --nav-font-family: "Comic Sans MS", "Comic Sans";
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+    --h1-color: darkblue;
+}
+
 nav {
-    background-color: #C66E4E;
+    background-color: var(--nav-background-color);
     padding-inline: 10px;
+    font-family: var(--nav-font-family);
 }
 
 nav a {
-    color: white;
+    color: var(--nav-text-color);
     display: block;
-    padding: 20px
+    padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--h1-color);
+    font-family: var(--nav-font-family);
 }
 
 main img {
@@ -36,6 +47,7 @@ main {
 
 body {
     background-color: #f8dbd1;
+    font-family: var(--nav-font-family);
 }
 
 aside {
@@ -43,13 +55,19 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--nav-background-color);
+    color: var(--nav-text-color);
     text-align: center;
+    font-family: var(--nav-font-family);
+}
+
+em {
+    color: var(--h1-color);
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    font-family: var(--nav-font-family);
 }
