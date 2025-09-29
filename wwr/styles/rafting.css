@@ -22,8 +22,16 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 1rem;
 }
 
+header img {
+    width: 150px;
+    height: auto;
+}
 
 header, main, footer {
     width: 840px;
@@ -51,7 +59,27 @@ h2 {
 }
 
 
-nav, p, section, article {
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+p, section, article {
     margin: 16px;
     padding: 8px;
 }
@@ -73,6 +101,31 @@ nav, p, section, article {
 
 .history {
     margin-top: -150px;
+    background-color: var(--accent2-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.history-content {
+    display: flex;       
+    align-items: center;  
+}
+
+
+.history-content img {
+    width: 250px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    margin: 0 20px;      
+}
+
+
+.left-text, .right-text {
+    width: 200px;         
+    margin: 0;
+    line-height: 1.6;
 }
 
 
@@ -118,4 +171,63 @@ article img {
     width: 120px;
     margin-left: 16px;
     border: 3px solid var(--primary-color);
+}
+
+.adventures {
+    margin: 2rem 0;
+}
+
+
+.adventure-images {
+    display: flex;           
+    margin: 2rem 0;
+}
+
+.adventure-images figure {
+    width: 20%;            
+    text-align: center;
+    margin: 0 10px;         
+}
+
+.adventure-images img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.adventure-images figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Footer with text on left, social media on right */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: flex;           /* Horizontal layout */
+    align-items: center;     /* Center items vertically */
+    padding: 1rem;
+}
+
+footer p {
+    margin-right: auto;      /* Push text to left */
+}
+
+/* Social media icons in a row */
+.socialmedia {
+    display: flex;           /* Line up social icons horizontally */
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
 }
