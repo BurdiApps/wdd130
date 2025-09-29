@@ -204,22 +204,22 @@ article img {
     font-size: 0.9rem;
 }
 
-/* Footer with text on left, social media on right */
+
 footer {
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    display: flex;           /* Horizontal layout */
-    align-items: center;     /* Center items vertically */
+    display: flex;           
+    align-items: center;     
     padding: 1rem;
 }
 
 footer p {
-    margin-right: auto;      /* Push text to left */
+    margin-right: auto;     
 }
 
-/* Social media icons in a row */
+
 .socialmedia {
-    display: flex;           /* Line up social icons horizontally */
+    display: flex;           
 }
 
 .socialmedia img {
