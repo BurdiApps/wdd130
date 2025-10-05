@@ -240,7 +240,6 @@ footer p {
 
 /* Contact Page Specific Styles */
 
-/* Company Info Section - Centered at top like wireframe */
 .company-info {
     display: flex;
     flex-direction: column;
@@ -270,7 +269,6 @@ footer p {
     line-height: 1.4;
 }
 
-/* Contact Section - Two column layout: Map left, Form right */
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
