@@ -1,0 +1,54 @@
+h1 {
+    color: navy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {
+    background-color: rgb(238, 235, 235);
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border-radius: .25rem;
+}
+
+strong {
+    color: navy;
+}
+
+.exampleCode {
+    background-color: rgb(72, 71, 71);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 5rem;
+    margin-right: 35rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30rem;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.50rem;
+
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    margin: 1rem;
+    padding-top: 1rem;
+}
