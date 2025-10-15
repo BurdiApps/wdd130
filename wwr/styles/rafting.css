@@ -44,8 +44,7 @@ main {
     margin-top: 0;
 }
 
-h1,
-h2 {
+h1,h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     background-color: var(--accent2-color);
@@ -97,11 +96,27 @@ article {
     position: relative;
 }
 
+.hero-message {
+    position: absolute;
+    color: var(--accent2-color);
+    text-shadow: var(--accent3-color) 1px 1px 10px;
+    top: 400px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+}
+
+.hero p {
+   color: var(--accent1-color);
+   top: 300px;
+}
+
 .hero img {
     float: right;
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 3rem;
 }
 
 .history {
@@ -290,12 +305,29 @@ footer p {
     height: 500px;
 }
 
+.call-to-action {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--secondary-color);
+    text-shadow: var(--primary-color) 1px 1px 2px;
+}
 
 .contact-form {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .contact-form form {
@@ -303,6 +335,9 @@ footer p {
     flex-direction: column;
     gap: 1rem;
     height: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 10px;
+    justify-content: space-between;
 }
 
 .contact-form label {
@@ -445,8 +480,25 @@ footer p {
     transform: translateY(-1px);
 }
 
-.team-section {
+.call-to-action button{
     margin: 2rem 0;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.call-to-action button:hover {
+    background-color: #c70e1c;
+    transform: translateY(-1px);
 }
 
 .contact-page .team-section h2 {
@@ -498,4 +550,85 @@ footer p {
     border-radius: 0;
     font-size: 0.9rem;
     color: var(--primary-color);
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+.grid-layout p {
+    font-size: 1.1rem;
+    line-height: 1.6;   
+    color: var(--accent3-color);
+    font-family: var(--body-font);
+    padding: 1rem;
+    background-color: var(--accent2-color);
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0,
+    0, 0.1);
+    border: 3px solid var(--secondary-color);
+    text-shadow: var(--primary-color) 1px 1px 2px;
+    font-weight: 600;
+}
+
+.trip-descriptions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0; 
+    padding: 1rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--secondary-color);
+
+}
+
+
+.trip-btn {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip-btn:hover {
+    background-color: #c70e1c;
+    transform: translateY(-1px);
+}
+
+.trip-btn:active {
+    background-color: var(--secondary-color);
+}
+
+/* Nice Table Styles */
+table, th, td {
+    border: 2px solid var(--primary-color);
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+tbody {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+}
+table {
+    background-color: var(--secondary-color);
+    margin: 1rem;
+    color: var(--accent1-color);
 }
